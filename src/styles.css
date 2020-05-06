@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+}
+button{
+  font-family: "Poppins", sans-serif;
+
+}
+.logo a{
+  text-decoration: none;
+  color: #8a8a8a
+}
+header {
+  display: flex;
+  background-color:white;
+  align-items: center;
+  color: #8a8a8a;
+  width: 90%;
+  margin: auto;
+  height: 10vh;
+}
+
+
+.nav-link {
+  text-decoration: none;
+  color: #8a8a8a;
+}
+.nav-links{
+  list-style: none;
+  justify-content: space-around;
+}
+
+.logo-container{
+  background-color:;
+  flex: 2;
+  display: flex;
+  color: #8a8a8a;
+}
+.logo-container> a{
+  text-decoration: none;
+}
+
+.logo {
+  font-weight: 500;
+  margin: 6px;
+  text-decoration: none;
+}
+nav{
+  background-color: ;
+  flex: 5;
+}
+.cart {
+  background-color:  ;
+  flex: 1;
+  justify-content: space-around;
+}
+
+.logo-container, .nav-links, .cart {
+  display: flex;
+}
+
+.presentation {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  align-items: center;
+  }
+
+.cover img{
+  height: 50vh;
+  flex: 1;
+  animation: drop 1.5s ease;
+}
+.cover {
+  flex:1;
+  height: 40vh;
+}
+
+.introduction {
+  flex:1;
+}
+.intro-text{
+  font-size: 30px;
+  background: linear-gradient(to right, #494964 , #8a8a8a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.intro-text p{
+  font-size: 20px;
+  margin-top: 5px;
+}
+.cta{
+  padding-top: 50px;
+  margin-left: 10px;
+}
+
+.cta-select{
+  border: 2px solid #8a8a8a;
+  color: #8a8a8a;
+  width: 150px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 15px;
+  background: white;
+}
+.cta-add {
+  background: #8a8a8a;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  width: 150px;
+  height: 30px;
+
+}
+
+
+
+@keyframes drop{
+  0%{
+    opacity: 0;
+    transform: translatey(-80px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media screen and ( max-width: 1024px) {
+  .presentation {
+    flex-direction: column;
+  }
+  .introduction{
+    margin-top: 5vh;
+    text-align: center;
+  }
+  .intro-text h2{
+    font-size: 30px;
+  }
+  .intro-text p{
+    font-size: 20px;
+  }
+  .cover img{
+    height: 40vh;
+  }
+}
